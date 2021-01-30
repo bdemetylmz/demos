@@ -21,7 +21,7 @@ public class StudentController {
         return studentService.getAll();
     }
 
-    @PostMapping("/save")
+    @PostMapping("/save") // todo
     public void saveStudent(@RequestBody StudentDto studentDto) {
         studentService.save(studentDto);
     }
